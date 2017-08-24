@@ -7,7 +7,8 @@ app.on('ready', () => {
     tray.setImage('tray_icon_purple.png')
   }
   const contextMenu = Menu.buildFromTemplate([
-    {label: 'Change Icon', click: onClickChangeIcon }
+    {label: 'Change Icon', click: onClickChangeIcon },
+    {role: 'quit'}
   ])
   tray.setToolTip('This is my application.')
   tray.setContextMenu(contextMenu)
