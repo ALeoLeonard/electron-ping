@@ -4,8 +4,8 @@
   "description": "electron app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/electron ."
+    "start": "node_modules/.bin/electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,6 @@
     "url": "https://github.com/ALeoLeonard/electron-ping/issues"
   },
   "homepage": "https://github.com/ALeoLeonard/electron-ping#readme",
-  "scripts": {
-
-  },
   "devDependencies": {
     "electron": "^1.7.5",
     "standard": "^10.0.3"
