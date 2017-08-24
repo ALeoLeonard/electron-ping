@@ -16,5 +16,6 @@ app.on('ready', () => {
     {role: 'quit'}
   ])
   tray.setToolTip('Electron Ping')
+  setInterval(() => { notify('yo yo playa you did it') }, 1000)
   tray.setContextMenu(contextMenu)
 })
