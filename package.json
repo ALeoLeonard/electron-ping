@@ -1,0 +1,26 @@
+{
+  "name": "electron-ping",
+  "version": "1.0.0",
+  "description": "electron app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALeoLeonard/electron-ping.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Andy Leonard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ALeoLeonard/electron-ping/issues"
+  },
+  "homepage": "https://github.com/ALeoLeonard/electron-ping#readme",
+  "devDependencies": {
+    "electron": "^1.7.5",
+    "standard": "^10.0.3"
+  }
+}
