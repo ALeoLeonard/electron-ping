@@ -1,4 +1,5 @@
 const {app, Menu, Tray} = require('electron')
+const notify = require('electron-main-notification')
 
 let tray = null
 app.on('ready', () => {
@@ -6,10 +7,14 @@ app.on('ready', () => {
   const onClickChangeIcon = function () {
     tray.setImage('tray_icon_purple.png')
   }
+  const onClickTriggerNotification = function () {
+    notify('hello world')
+  }
   const contextMenu = Menu.buildFromTemplate([
     {label: 'Change Icon', click: onClickChangeIcon },
+    {label: 'Trigger Notification', click: onClickTriggerNotification },
     {role: 'quit'}
   ])
-  tray.setToolTip('This is my application.')
+  tray.setToolTip('Electron Ping')
   tray.setContextMenu(contextMenu)
 })
